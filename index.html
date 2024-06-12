@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iPhone Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="display" readonly placeholder="0">
+    <div class="keys">
+      <div onclick="clearDisplay()" class="btn btn3 ">AC</div>
+      <div onclick="display('')" class="btn btn3 ">±</div>
+      <div onclick="display('%')" class="btn btn3 ">%</div>
+      <div onclick="display('/')" class="btn operator ">÷</div>
+      <div onclick="display('7')" class="btn number-7">7</div>
+      <div onclick="display('8')" class="btn number-8">8</div>
+      <div onclick="display('9')" class="btn number-9">9</div>
+      <div onclick="display('*')" class="btn operator ">×</div>
+      <div onclick="display('4')" class="btn number-4">4</div>
+      <div onclick="display('5')" class="btn number-5">5</div>
+      <div onclick="display('6')" class="btn number-6">6</div>
+      <div onclick="display('-')" class="btn operator ">−</div>
+      <div onclick="display('1')" class="btn number-1">1</div>
+      <div onclick="display('2')" class="btn number-2">2</div>
+      <div onclick="display('3')" class="btn number-3">3</div>
+      <div onclick="display('+')" class="btn operator ">+</div>
+      <div onclick="display('0')" class="btn zero">0</div>
+      <div onclick="display('.')" class="btn ">.</div>
+      <div onclick="calculate()" class="btn operator ">=</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
